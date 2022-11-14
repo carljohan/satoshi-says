@@ -1,0 +1,145 @@
+.satoshi-old-wrapper {
+    background: #7D01E9;
+    height: 100 vh;    
+    padding: 50px;   
+    color: white; 
+}
+
+
+.satoshi-old-wrapper h1 {
+    margin: 0;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bolder;    
+    margin-bottom: 20px;
+}
+
+
+/* This is styling for every message */
+
+.satoshi-old-message-wrapper {
+    margin-bottom: 30px;
+    display: flex;
+}
+
+
+.satoshi-old-message-wrapper .speech-bubble {
+    margin-bottom: 10px;
+    position: relative;
+    -webkit-box-shadow: 0px 19px 28px -5px rgba(25,0,48,0.48);
+    -moz-box-shadow: 0px 19px 28px -5px rgba(25,0,48,0.48);
+    box-shadow: -3px 6px 5px -5px rgba(25, 0, 48, 0.48);
+    color: black;
+}
+
+
+.satoshi-old-message-wrapper .speech-bubble:before {
+    transform: rotateZ(29.676055deg) translateX(-16px) skewX(-38deg);    
+    bottom: 33%;    
+    z-index: -1;        
+}
+
+.modal-half-body-wrapper-old {
+    background: white;
+    width: 95px;
+    height: 95px;
+    border-radius: 109px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.modal-half-body-old{
+    width: 75px;
+    background-position-x: center;
+    background-position-y: bottom;
+    height: 114px;
+    border-radius: 104px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.satoshi-old-message-wrapper .modal-half-body-wrapper-old {
+    margin-top: 50px;
+    margin-right: 57px;
+}
+
+.satoshi-old-message-wrapper .text-under-bubble {
+    font-size: 14px;
+}
+
+.text-under-bubble-price {
+    display: flex;
+    justify-content: space-between;
+}
+
+.text-under-bubble > div {
+    margin-top: 10px;    
+}
+
+.text-under-bubble-price div {
+    display: flex;
+}
+
+.timeowned-string {
+    text-align: center;
+}
+
+.connected-eth-logo-white {
+    background-image:url('../images/connected_eth_logo_white.svg');
+    height: 19px;
+    width: 16px;    
+    margin-left: 10px;
+    background-repeat: no-repeat;    
+}
+
+/* mirrored  */
+.satoshi-old-mirrored-speech-bubble .modal-half-body-wrapper-old {
+    order: 10;
+    margin-right: 0px;
+    margin-left: 20px;
+    margin-top: 50px;
+}
+
+.satoshi-old-mirrored-speech-bubble .speech-bubble, .satoshi-old-mirrored-speech-bubble .speech-bubble *  {
+    transform: scaleX(-1);
+}
+
+.satoshi-old-mirrored-speech-bubble .speech-bubble-quote {
+    left: 20px;
+    text-align: right;
+    right: 0;
+}
+
+.satoshi-old-all-messages-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.satoshi-old-go-back {
+    -webkit-box-shadow: 0px 5px 5px -5px rgba(25,0,48,0.48);
+    -moz-box-shadow: 0px 5px 5px -5px rgba(25,0,48,0.48);
+    box-shadow: 0px 5px 5px -5px rgba(25,0,48,0.48);
+    border-radius: 100px;
+    background: white;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: #7D01E9;
+    padding: 30px;
+
+    transition: background 0.2s;
+    
+}
+
+.satoshi-old-go-back:hover {
+    background: #6400bb;
+    color: white;
+    
+}
+
+.satoshi-old-wrapper a {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+}

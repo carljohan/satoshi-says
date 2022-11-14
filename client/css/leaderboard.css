@@ -1,0 +1,214 @@
+.leaderboard{
+        padding: 135px;
+        display: flex;
+}
+.leaderboard-wrapper{
+ background: #f9f9f9;
+}
+
+.leaderboard-first-place-mood {    
+    height: 80px;
+    width:  80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.leader-board-mood-wrapper {
+    margin-left:1rem;
+    background: white;
+    border-radius: 105px;
+    width: 90px;
+    height: 90px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    -webkit-box-shadow: -1px 11px 122px -32px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 11px 122px -32px rgba(0,0,0,1);
+    box-shadow: -1px 11px 122px -32px rgba(0,0,0,1);
+    position: relative; 
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.leaderboard-left-side-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.leaderboard-left-side .leader-board-mood-wrapper {
+    width: 150px;
+    height: 150px;
+}
+
+.leaderboard-left-side .leaderboard-first-place-mood {
+    width: 140px;
+    height: 140px;
+}
+
+.leaderboard-upvote-downvote {
+    background-position: center;
+    background-size: contain;
+    height: 30px;
+    width: 50px;
+    background-repeat: no-repeat;
+
+}
+
+.left-side-upvotes {
+    margin-right: 20px;
+}
+
+.leaderboard-upvote {
+    background-image:url('../images/upvotes/upvote_new_red.svg'); 
+
+}
+.leaderboard-downvote {
+    background-image:url('../images/upvotes/downvote_new_blue.svg'); 
+
+}
+
+.leaderboard-upvote-number {
+    width: 30px;
+    margin-right: 20px;
+}
+
+
+
+.leader-board-first-place-mood-upvote-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.leaderboard {
+    display: flex;
+}
+
+.leaderboard-left-side {
+    border-radius: 3px 0 0 3px;
+    z-index: 2;
+    background: linear-gradient(180deg, #342142, #7A00E6);
+    width: 50%;
+    display: flex;    
+    align-items: center;    
+    flex-direction: column;
+    padding: 80px 20px;
+    color: white;    
+    font-size: 21px;
+    font-weight: bold;    
+}
+
+.leaderboard-left-side a {
+    color: white;
+    
+}
+.firstplace-name{
+text-align: center;
+}
+
+.leaderboard-headline {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px; 
+    text-align: center;   
+}
+
+.leaderboard-first-place-name-mood-time-wrapper {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.leaderboard-first-place-name-mood-time-wrapper .leader-board-mood-wrapper {
+    margin-bottom: 20px;
+    
+}    
+
+.leaderboard-medal {
+    position: absolute;
+    display: flex;
+    color: #7A00E6;
+    justify-content: center;
+    align-items: center;    
+    right: 0;    
+    background: #FFF9C9;
+    border-radius: 105px;
+    width: 50px;
+    height: 50px;
+    -webkit-box-shadow: -1px 11px 122px -32px rgba(0,0,0,1);
+    -moz-box-shadow: -1px 11px 122px -32px rgba(0,0,0,1);
+    box-shadow: -1px 11px 122px -32px rgba(0,0,0,1);
+}
+
+.leaderboard-upvote-downvote .left-side-upvotes{
+    text-align: center;
+}
+
+
+.leaderboard-medal-0 {
+    background: #FFF9C9;
+}
+
+.leaderboard-medal-1 {
+    background: #E3DFDF;
+}
+
+.leaderboard-medal-2 {
+    background: #D2A28A;
+}
+
+
+/* right-side */
+
+.leaderboard-right-side {
+    border-radius: 0 3px 3px 0;
+    border: 1px solid #f1f1f1;
+    width: 50%;    
+    font-size: 14px;
+    background-color: #fff;
+}
+
+.leaderboard-right-side .leaderboard-medal {
+    color: white;
+}
+
+.leaderboard-right-side-component-wrapper {
+    color: #9FA8BE;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 20px 0px;
+    border-bottom: 1px solid #EFEEF3;
+    padding-right: 20px;
+}
+
+.leaderboard-right-side-component-wrapper  a {
+    color: #9FA8BE;
+}
+
+.leaderboard-right-side-component-wrapper:last-child {
+    border: none;
+}
+
+
+.leaderboard-right-side-component-upvotes-wrapper {
+    display: flex;
+    align-items: center;
+
+}
+
+.leaderboard-right-side .leaderboard-medal {
+    width: 20px;
+    height: 20px;
+}
+
+.leaderboard-right-side-name-time-wrapper {
+    width: 280px;
+}
+
+@media screen and (max-width: 770px)  {
+    .leaderboard{
+        padding: 0;
+    }
+}
+    

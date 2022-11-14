@@ -1,0 +1,70 @@
+.info-modal-button {
+    animation: pulse 3000ms ease-out alternate;
+    animation-iteration-count: 2;
+    transition: transform 170ms ease-in-out;
+    background-image:url('../images/round-info-button.png');
+    background-repeat: no-repeat;
+    width: 39px;
+    cursor: pointer;
+    position: absolute;
+    z-index: 11;
+    padding: 10px;
+    background-size: cover;
+    height: 39px;
+    top: 50px;
+    right: 50px;
+    background-color: none;
+}
+.info-modal-button:hover{
+    transform: scale(1.1);
+}
+
+.info-modal-wrapper {
+    padding: 50px 100px;
+    overflow: hidden;
+}
+
+.info-modal-wrapper a {
+    color: black;    
+}
+
+.info-modal-headline {
+    font-weight: bolder;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.info-modal-body-text {
+    margin-bottom: 20px;
+}
+
+.info-faq-button-wrapper {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.info-faq-button-wrapper div {
+    margin-top: 10px;
+}
+
+.info-modal-link {
+    color:#5E18A5 !important;
+}
+
+.info-modal-example > div {
+    display: flex;
+    justify-content: space-between;
+        
+}
+
+.info-modal-example {
+    margin-bottom: 20px;
+}
+
+/* Mobile querys  */
+@media screen and (max-width: 770px) {
+    .info-modal-button {
+      display: none;  
+    }
+}

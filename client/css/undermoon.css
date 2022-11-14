@@ -1,0 +1,254 @@
+
+
+/* transition from moon */
+.under-moon-one{
+    margin-top: -10px;
+}
+
+/* heading text */
+.under-moon-text, .what-moon-text, .how-moon-text, .why-moon-text{
+    font-family: 'Open Sans',
+    arial,
+    sans-serif;
+    font-weight: 700;
+    color: #653DBC;
+    font-size: 30px;
+}
+
+.example-section{
+    display: flex;
+    background-color: #82817d;
+    background-image:url('../images/pattern.png');
+}
+
+.over-under-moon-table {
+    width: 100%;
+}
+
+.under-moon-table{
+    justify-content: flex-end;
+    padding: 30px;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+
+.p-moon, .table {
+    font-size: 20px;
+    font-family: 'Open Sans',
+    arial,
+    sans-serif;
+    font-weight: 100;
+}
+
+.what-section{
+    background-color:#f9f9f9;
+    background-image: url('../images/pattern.png');
+    background-repeat: repeat;
+    background-size: 600px;
+}
+
+.example-section {
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
+}
+
+
+.how-section, .why-section {
+    padding-right: 50px;
+}
+
+.what-section, .how-section, .example-section, .why-section{
+    color: #82817d;
+    display: flex;
+}
+
+.what-section,
+.example-section, 
+.how-text,
+.why-text{
+    justify-content: center;
+}
+.how-section,
+.why-section,
+.what-text,
+.example-text {
+        justify-content: center;
+    
+}
+
+.what-text-wrapper, .how-text-wrapper, .example-text-wrapper, .why-text-section, .satoshi-wrapper, .satoshi-wrapper-2{
+    display:flex;
+    width: 50%;
+    justify-content: flex-end;
+}
+
+
+
+.what-text, .how-text, .under-moon-table, .why-text{
+        background-color: #fff;
+}
+
+.what-wrapper {
+    margin-top: 92px;
+}
+
+.what-wrapper, .how-wrapper, .why-wrapper, .example-wrapper{
+    background-color: #FFFFFF;    
+        display: flex;
+        margin: 58px;
+        width: 70%;
+        z-index: 5;
+        padding: 40px;
+        border-radius: 3px;
+        box-shadow: 1px 1px 3px 1px rgba(190, 190, 190, 0.30);
+}
+
+.faq-button {
+    cursor: pointer;
+}
+
+
+.satoshi-hello .satoshi{
+    justify-content: center;
+    
+
+}
+
+.satoshi-thinking{
+    background-image: url('../images/satoshi/thinking.svg') !important;
+}
+.satoshi-hello{
+        background-image: url('../images/satoshi/hello.svg') !important;
+}
+
+.satoshi-pointing {
+    background-image: url('../images/satoshi/pointing.svg') !important;
+}
+.satoshi-happy {
+    background-image: url('../images/satoshi/happy.svg') !important;
+}
+
+
+.satoshi{
+    width: 300px;
+    height: 300px;
+    background: #fff;
+    background-position-x: center;
+    background-position-y: bottom;
+    border-radius: 2000px;
+    background-repeat: no-repeat;
+    background-size: 50%;
+}
+
+
+hr {
+    border-top: 1px solid #EFEEF3;
+}
+
+
+.table {
+    font-size: 16px !important;
+}
+
+.table-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.table-col2-profit{
+    color: #36bd18;
+}
+
+
+
+/* more buttons section */
+
+.more-buttons-section {
+        background: #f9f9f9;
+        padding: 100px;
+    display: flex;
+}
+
+.faq-section{
+   display: flex;
+   flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+
+}
+.wof-section{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.more-title{
+    text-align: center;
+    align-items: center;
+    transition: transform 170ms ease-in-out;
+    font-size: 1.5rem;
+    font-weight: 200;
+    padding-bottom: 10px;
+    padding-right: 25px;
+    color: #000;
+}
+
+
+
+.more-buttons{
+    z-index: 4;   
+    align-items: center;
+    transition: transform 170ms ease-in-out;
+    border-radius: 100px 100px 100px 100px;
+    font-size: 20px;
+    color: #FFFFFF;
+    padding: 10px;
+    width: 185px;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.wof-button{
+    background : #653DBC;
+}
+.faq-button{
+        background: #1D75FB;
+        
+}
+.faq-button:hover,
+.wof-button:hover {
+    transform: scale(1.1);
+}
+
+.more-buttons-wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+@media screen and (max-width: 910px) {
+
+.faq-section,
+.wof-section {
+     width: auto;
+}
+   
+    .more-buttons-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .wof-section{
+        padding-top: 100px;
+    }
+}
+@media screen and (max-width: 770px) {
+.satoshi-pointing {
+    background-image: url('../images/satoshi/pointing_up.svg') !important;
+}
+}

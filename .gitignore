@@ -1,0 +1,12 @@
+**/.DS_Store
+node_modules
+dist/index_bundle.js
+
+secretReCaptcha.js
+twitterSecret.js
+privatekeyfirebase.json
+
+client/components/utils/firebase.js
+client/components/utils/contractAddress.js
+client/components/utils/contractABI.js
+client/browserconfig.xml

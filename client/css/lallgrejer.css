@@ -1,0 +1,102 @@
+.vitalik {
+    
+    background-repeat: no-repeat;
+    width: 76px;    
+    position: absolute;
+    z-index: 10;
+    padding: 10px;
+    background-size: contain;
+    height: 79px;
+    bottom: 136px;
+    left: 10%;
+    transition: transform 1s;
+}
+
+.vitalik-image {
+     z-index: -1 !important;
+    opacity: 0;
+    background-image:url('../images/vitalik.png');
+    
+}
+
+.start-page-earth {
+    width: 76px;
+    position: absolute;
+    z-index: 10;
+    padding: 10px;
+    background-size: contain;
+    height: 200px;
+    top: 6%;
+    right: 1%;
+    background-repeat: no-repeat;
+  background-image: url('../images/earth.svg');
+  animation-name: rotate;
+  animation: rotate 500s infinite linear;
+}
+
+.vitalik-hover {
+    opacity: 1;
+    transform: translateY(-82px)
+    rotate(-10deg);
+}
+
+.start-page-rocket {
+   
+    width: 16px;
+    position: absolute;
+    
+    animation-duration: 500s;
+    animation-name: slidein;
+}
+
+.start-page-rocket::before {
+    content: '';
+    position: absolute;
+    background-image:url('../images/Starship2.svg');
+    z-index: 10;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 3px;
+    top: 186px;
+    left: 1208%;
+    animation-duration: 500s;
+    animation-name: rotate-small;
+}
+
+@keyframes slidein {
+  from {
+    transform: translateX(0px) translateY(0px);     
+  }
+
+  to {
+    transform: translateX(1000px) translateY(-300px);      
+    
+  }
+}
+
+@keyframes rotate-small {
+  from {
+    transform: rotate(0deg);     
+  }
+
+  to {
+    transform: rotate(-28deg);
+    
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translate(-180px) rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg) translate(-180px) rotate(-360deg);
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .start-page-earth{
+    display:none;
+  }
+}

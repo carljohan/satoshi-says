@@ -1,0 +1,668 @@
+.start-page-wrapper {
+        background: linear-gradient(180deg, #0b0010fa, #5f3b79);
+    height: 94vh;
+}
+
+.title-1{
+        font-family: 'Comic Sans MS',
+        'Chalkboard SE',
+        'Comic Neue',
+        sans-serif;
+        font-weight: 900;
+}
+.title-2{
+    font-family: 'Open Sans',
+    arial,
+    sans-serif;
+    ;
+    font-weight: 200;
+}
+
+.start-page-headline {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 20px;
+    font-size: 50px;
+    color: white;
+    z-index: 10;
+}
+
+.start-page-headline-small  {
+    font-size: 20px;
+}
+
+
+
+.particles-js-wrapper canvas {
+    position: absolute;
+}
+
+.start-page-moon-wrapper {
+    position: relative;
+    z-index: 2;
+    height: 100%;
+}
+
+.start-page-satoshi-bubble-wrapper {
+    left: 27%;
+    position: absolute;
+    bottom: 325px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    width: 650px;
+    flex-direction: column;    
+}
+
+.start-page-moon {
+    background-image:url('../images/moon.png');
+    height: 189px;    
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: 1;
+    padding: 100px;
+    position: absolute;
+    bottom: 0;
+    background-position-y: top;
+    background-position-x: center;
+
+}
+
+.start-page-satoshi {
+    position: absolute;
+    height: 307px;
+    width: 154px;
+    background-size: contain;
+    top: 71px;
+    background-position: center;
+    background-repeat: no-repeat; 
+    z-index: 2;
+}
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    right:100px;
+     
+  }
+
+  to {
+    opacity: 1;
+    right:0;
+  }
+}
+
+
+.current-price, .current-profit, .upvote-score{
+    position: absolute;
+    right: 0;
+    margin-right: -50px;
+    margin-top: -50px;
+    top: 0;
+}
+
+.start-page-speech-bubble {
+    font-family: 'Comic Sans MS',
+    'Chalkboard SE',
+    'Comic Neue',
+    sans-serif;
+}
+
+.start-page-speech-bubble-upvote-wrapper {
+    align-self: flex-end;
+    align-items: center;    
+    display: flex;
+    
+    justify-content: center;
+}
+
+.start-page-speech-bubble-upvote-wrapper .speech-bubble {
+    position: relative;
+}
+
+.start-page-under-bubble-prices {
+    /* New price */
+    
+    font-size: 17px;
+    bottom: -39px;
+    margin-top: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 61%;
+}
+
+.start-page-under-bubble-prices span {
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.56);    
+    display: flex;
+    align-items: center;
+}
+
+.speech-bubble-quote {
+        position: absolute;
+    bottom: 0;
+    right: 20px;
+}
+.start-page-change-button-wrapper {
+    position: absolute;
+    bottom: -9px;
+    z-index: 3;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.start-page-wrong-network {
+    color: red;
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.start-page-wrong-network .faq-button {
+    width: 250px;
+    color: white;
+    font-size: 17px;
+    background: linear-gradient(180deg, #847AD1, #704398);
+
+}
+
+.start-page-change-button-wrapper .start-page-change-message-button-inside-wrapper {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    transition: transform 300ms ease-in-out; 
+}
+
+.animated-change-message {
+    transform: scale(1.1);
+}
+
+.start-page-change-button-wrapper .change-button-text {
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    color: white;
+    font-size: 13px;
+}
+
+.changeMessageButton {
+    font-size: 13px !important;
+    text-align: center;
+    transition: all 0.5s ease;
+    color: #fff;
+    border-color: #704398;
+    overflow: visible;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: 18px 30px;
+    font-size: 16px;
+    overflow: visible;
+    cursor: pointer;
+    background: linear-gradient(180deg, #704398, #847ad1);
+    border: none;
+    min-width: 273px;
+    padding: 27px;
+    border-radius: 100rem;
+}
+
+.changeMessageButton::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #847AD1, #704398);
+    z-index: -1;
+    -webkit-box-shadow: 0 0 0 0 #704398;
+    box-shadow: 0 0 0 0 #704398;
+    -webkit-transform: translate(-50%, -50%) scale(0);
+    transform: translate(-50%, -50%) scale(0);
+    -webkit-transition: -webkit-transform 0.2s linear;
+    transition: -webkit-transform 0.2s linear;
+    transition: transform 0.2s linear;
+    transition: transform 0.2s linear, -webkit-transform 0.2s linear;
+}
+.changeMessageButton:hover::after {
+    -webkit-box-shadow: 0 0 0 24px transparent;
+    box-shadow: 0 0 0 24px transparent;
+    -webkit-transform: translate(-50%, -50%) scale(1);
+    transform: translate(-50%, -50%) scale(1);
+    -webkit-transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.5s ease-out 0.2s;
+    transition: -webkit-transform 0.2s linear, -webkit-box-shadow 0.5s ease-out 0.2s;
+    transition: transform 0.2s linear, box-shadow 0.5s ease-out 0.2s;
+    transition: transform 0.2s linear, box-shadow 0.5s ease-out 0.2s, -webkit-transform 0.2s linear, -webkit-box-shadow 0.5s ease-out 0.2s;
+}
+
+.changeMessageButton::after {
+    border-radius: 100rem;
+}
+
+.changeMessageButton:hover {
+   -webkit-box-shadow: 0 15px 12px -5px rgba(0, 0, 0, 0.24);
+   box-shadow: 0 15px 12px -5px rgba(0, 0, 0, 0.24);
+    color: #fff;
+}
+
+
+
+.faq-textlink{
+transition: transform 170ms ease-in-out;
+padding-top: 10px;
+color: white;
+cursor: pointer;
+}
+
+.faq-textlink:hover{
+    transform: scale(1.3);
+}
+
+.no-metamask-button {
+    font-size: 13px !important;
+    text-align: center;
+    transition: all 0.5s ease;
+    color: #fff;
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    vertical-align: middle;
+    font-size: 16px;
+    overflow: visible;
+    cursor: pointer;
+    background: linear-gradient(180deg, #704398, #847ad1);
+    border: none;
+    min-width: 273px;
+    padding: 20px;
+    border-radius: 100rem;
+    overflow: hidden;
+    opacity: 0.65;
+    box-shadow: 1px 1px 3px 1px rgb(162, 149, 126);
+    transition: transform 0.2s;
+}
+
+.no-metamask-button:hover {
+    transform: scale(1.1);
+}
+
+.sadSatoshi {
+    background-image:url('../images/satoshi/body/sad.svg');
+}
+
+.happySatoshi {
+    background-image:url('../images/satoshi/body/happy.svg');
+}
+
+.angrySatoshi {
+    background-image:url('../images/satoshi/body/angry.svg');
+}
+
+.thinkingSatoshi {
+    background-image:url('../images/satoshi/body/thinking.svg');
+}
+
+.stokedSatoshi {
+    background-image:url('../images/satoshi/body/stoked.svg');
+}
+
+.loadingSatoshi {
+    background-image:url('../images/satoshi/body/loading.svg');
+}
+
+@keyframes donut-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.donut {
+  display: inline-block;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #7983ff;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  animation: donut-spin 1.2s linear infinite;
+  position: absolute;
+    right: 47px;
+    top: 23px;
+}
+
+.display-none {
+    display: none !important;
+}
+
+
+/* connected eth logo */
+.connected-eth-logo {
+    background-image:url('../images/connected_eth_logo.svg');
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;    
+    right: 0;
+    
+
+}
+.connected-eth-logo-wrapper {
+    pointer-events: none;
+    position: absolute;
+    left: 50px;
+    z-index: 5;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    top: 50PX;
+    z-index: 13;
+}
+
+.connected-eth-logo-wrapper:hover .connected-eth-logo-text {
+    opacity: 1;
+    
+    
+}
+.connected-eth-logo-wrapper .connected-eth-logo {
+    pointer-events:all;
+}
+
+
+.connected-eth-logo-text {
+    background: white;    
+    border-radius: 7px;
+    padding: 7px;
+    opacity: 0;
+    transition: opacity ease-in;
+    display: inline-block;
+    margin-top: 11px;    
+
+}
+
+
+.scroll-down-button {
+    background-image: url('../images/scrolldown.svg');   
+    margin-top: 44px;   
+    height: 50px;
+    background-size: contain;
+    width: 50px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    transition: transform 170ms ease-in-out;
+}  
+
+.scroll-down-button:hover {
+    transform: scale(1.1);
+}
+
+/* MAYBE REMOVES CAPTCHA */
+
+.rc-anchor-invisible {
+    display: none !important;
+}
+.grecaptcha-badge, .rc-anchor-invisible-text, .rc-anchor-normal-footer, .rc-anchor .rc-anchor-invisible, .rc-anchor-light,  .rc-anchor-invisible-hover {
+    display: none !important;
+}
+
+
+
+
+/* Mobile querys  */
+@media screen and (max-width: 920px) {
+    .start-page-satoshi-bubble-wrapper {
+        left: 17%;
+    }
+
+    .what-wrapper, .how-wrapper, .why-wrapper, .example-wrapper {
+        margin: 40px;
+        width: 82%;
+    }
+
+}
+@media screen and (max-width: 800px) {
+    .start-page-satoshi-bubble-wrapper {
+        left: 8%;
+    }
+
+}
+
+@media screen and (max-width: 770px), screen and (max-height: 600px) {
+    .vitalik, .vitalik-image {
+        display: none;
+    }
+    .speech-bubble {
+        width: 230px;
+    }
+    .start-page-satoshi-bubble-wrapper {
+        width: 100%;
+        display: flex;        
+        flex-direction: column;
+        align-items: center;
+        bottom: 100px;
+        left: 0;
+        position: unset;
+        padding-top: 13%; 
+    }
+    .upvote-downvote-wrapper {
+        display: none;
+    }
+
+    .share-component-wrapper {
+        display: none;
+    }
+
+    .start-page-moon {
+        display: none;
+    }
+
+    .start-page-wrong-network {
+        display: none;
+    }
+
+    .start-page-under-bubble-prices {
+        display: none;
+    }
+    .start-page-satoshi {                
+        height: 131px;                
+        width: 91px;
+        align-self: center;
+        justify-content: center;
+        background-size: contain;        
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 2;
+        position: unset;
+        order: 10;
+    }
+
+    .start-page-speech-bubble-upvote-wrapper {                
+        display: flex;
+        justify-content: center;        
+        align-self: center;
+        margin-bottom: 40px;
+    }
+    .speech-bubble::before {                
+        left: 42%;
+        -webkit-transform: rotateZ(-62.323945deg) translateX(-5px) skewX(-36deg);
+        transform: rotateZ(-62.323945deg) translateX(-5px) skewX(-36deg);
+        z-index: 0;
+    }
+
+    .start-page-headline {
+        font-size:40px;
+    }
+
+    .start-page-headline-small {
+        font-size: 15px;
+    }
+
+    .sadSatoshi {
+        background-image:url('../images/satoshi/halfbody/halfsad.svg');
+    }
+
+    .happySatoshi {
+        background-image:url('../images/satoshi/halfbody/halfhappy.svg');
+    }
+
+    .angrySatoshi {
+        background-image:url('../images/satoshi/halfbody/halfangry.svg');
+    }
+
+    .thinkingSatoshi {
+        background-image:url('../images/satoshi/halfbody/halfthinking.svg');
+    }
+
+    .stokedSatoshi {
+        background-image:url('../images/satoshi/halfbody/halfstoked.svg');
+    }
+
+    .loadingSatoshi {
+        background-image:url('../images/satoshi/body/loading.svg');
+    }
+
+    .what-wrapper {
+        flex-direction: column;
+    }
+
+    .what-text-wrapper {
+        order: 10;
+    }
+
+    .what-text {
+        padding: 40px;
+    }
+
+   .what-text-wrapper, .how-text-wrapper, .example-text-wrapper, .why-text-section, .satoshi-wrapper, .satoshi-wrapper-2 {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .satoshi {
+        width: 184px;
+        height: 185px;
+        margin-top: 20px;
+    }
+
+    .what-wrapper, .how-wrapper, .why-wrapper, .example-wrapper {
+        width: 100%;
+        padding: 0; 
+        margin: 0 !important;
+    }
+
+    .under-moon-table {
+        padding: 0;
+    }
+
+    .example-wrapper {
+        flex-direction: column;
+    }
+
+    .leaderboard {
+        flex-direction: column;
+    }
+    .leaderboard-left-side {
+        padding: 71px 0px !important;
+        width: 100% !important;
+    }
+    
+
+    .leaderboard-right-side {
+            width: 100% !important;
+    }
+    .p-faq {
+        padding-top: 0;
+    }
+
+    .footer {
+        display: none;
+    }
+
+    .satoshi-old-message-wrapper {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .satoshi-old-message-wrapper .modal-half-body-wrapper-old {
+        margin-bottom: 40px;
+        order: -1 !important;
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+
+    .satoshi-old-mirrored-speech-bubble .modal-half-body-wrapper-old {
+        order: -2 !important;
+        margin-bottom: 40px;
+    }
+
+    .satoshi-old-message-speech-bubble-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;   
+
+    }
+
+    .under-moon-one  {
+        margin-top: 0;
+    }
+
+    .start-page-moon-wrapper {
+        overflow-x: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    #stars, #stars2, #stars3 {
+        display: none;
+    }
+
+    .start-page-rocket {
+        display: none;
+    }
+
+    .scroll-down-button {
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-height: 770px) {
+
+    .start-page-headline {
+        font-size: 37px;
+    }
+    .start-page-headline-small {
+        font-size: 16px;
+    }
+
+    .start-page-satoshi-bubble-wrapper {
+        bottom: 326px;
+    }
+}
+
+.change-metamask {
+    display: inline;
+}
+
+.change-open-info-modal-button {
+    display: none;
+}
+
+.start-page-wrong-network:hover .change-metamask {
+    display: none;
+}
+
+.start-page-wrong-network:hover .change-open-info-modal-button {
+    display: inline;
+}

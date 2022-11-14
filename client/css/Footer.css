@@ -1,0 +1,83 @@
+.footer {
+    background-color: #1A1919;
+    color: white;        
+    padding: 100px;
+}
+
+.footer a {
+    color:white !important;
+}
+
+.footer:hover a:hover{
+    text-decoration: underline;
+}
+
+.footer ul {
+    list-style-type: none;
+    margin: 0;
+    -webkit-margin-start: 0;
+    padding: 0;
+}
+.footer-title{
+font-weight: 700;
+}
+
+.eth-logo {
+    background-image:url('../images/ethereum-white.svg');
+   background-size: contain;
+    width: 180px;
+    height: 100px;
+    background-repeat: no-repeat;      
+}
+
+.metamask-logo-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+.metamask-logo {
+    background-image: url('../images/metamask.png');
+    background-size: contain;
+    height: 60px;
+    width: auto;
+    justify-content: center;
+    align-items: center;
+    background-position: 50% 0px;
+    background-repeat: no-repeat;
+ }
+
+
+.metamask-logo-title{
+        display: inline-block;
+        color: #ffffff;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-size: 18px;
+        padding-top: 14px;
+        letter-spacing: 3px;
+        -webkit-user-select: none;
+        /* Safari */
+        -moz-user-select: none;
+        /* Firefox */
+        -ms-user-select: none;
+        /* IE10+/Edge */
+        user-select: none;
+        /* Standard */
+}
+
+.copyright{
+    -webkit-user-select: none;
+    /* Safari */
+
+    -moz-user-select: none;
+    /* Firefox */
+
+    -ms-user-select: none;
+    /* IE10+/Edge */
+
+    user-select: none;
+    /* Standard */
+}
+.footer-container {
+    display: flex;
+    justify-content: space-between;    
+}

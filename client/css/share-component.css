@@ -1,0 +1,28 @@
+.share-fb-logo {
+    background-image:url('../images/fb-logo.png');
+    
+    background-repeat: no-repeat;   
+    background-size: contain; 
+}
+
+.share-component-wrapper{
+    z-index: 10;
+}
+
+.share-component-wrapper div {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    transition: transform 170ms ease-in-out;
+}
+
+.share-component-wrapper div:hover {
+    transform: scale(1.1);
+} 
+
+.share-twitter-logo {
+    background-image: url('../images/twitter-logo.svg');    
+    background-repeat: no-repeat;    
+    background-size: contain;
+    margin-bottom: 12px;
+}
